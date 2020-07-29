@@ -1,0 +1,5 @@
+FROM debian:buster
+
+# Install internal tools
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    sshpass git zip xz-utils openssh-client wget nano
